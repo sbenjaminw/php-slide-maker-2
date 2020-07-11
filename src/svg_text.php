@@ -66,15 +66,11 @@
 						$textStr .= ' x="20%"';
 					}
 					
-					
-					//$textStr .= ' x="20%"';
-					
 					$textStr .= ' y="' . $this->textYpos . '" ';
 					
 					if($counter > 0){
 						$textStr .= ' y="' . ($this->textYpos + $this->textHeight) . '" ';
 					}
-					
 					
 					$textStr .= ' height="' . $this->textHeight . 'px" ';
 					$textStr .= '>';
@@ -95,8 +91,6 @@
 									
 				$textStr .= '<text style="font-family: Arial; font-size:' . $this->textHeight . 'px; text-align: center;"';
 				
-				//$textStr .= ' x="20%"';
-				
 				if(strlen($this->content) < 16){
 					$textStr .= ' x="40%"';
 				} else {
@@ -105,7 +99,6 @@
 				
 				$textStr .= ' y="' . $this->textYpos . '" ';
 			
-				
 				$textStr .= ' height="' . $this->textHeight . 'px" ';
 				$textStr .= '>';
 			
