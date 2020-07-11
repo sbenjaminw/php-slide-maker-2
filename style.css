@@ -1,0 +1,37 @@
+/*
+	STYLE.CSS
+	==========
+	
+*/
+
+form {
+	background-color: #DFDFDF;
+	padding: 5%;
+}
+
+input[type=submit] {
+	background-color: #FFFFFF;
+}
+
+input[type=submit]:hover {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+input[type=reset] {
+	background-color: #FFFFFF;
+}
+
+input[type=reset]:hover {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+input[type=file] {
+	background-color: #FFFFFF;
+}
+
+input[type=file]:hover {
+	background-color: #000000;
+	color: #FFFFFF;
+}

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+    <title>Slide Image Generator Form | SIGF Project</title>
+	
+	<!--	Custom CSS	-->
+	<link rel="stylesheet" type="text/css" href="./style.css"  />
+	
+	
+	<!--	Bootstrap	-->
+	<link rel="stylesheet" type="text/css" href="http://localhost/bootstrap/css/bootstrap.min.css" />
+	
+  </head>
+  
+  <body>
+  
+	<div class="jumbotron">
+		<h1>Slide Image Generator Form</h1>
+		<p>Generate slides for the favorite client.</p>
+	</div>
+	
+	<div class="col-md-10">
+		<h2>Instructions:</h2>
+		<ol>
+			<li>Enter the form contents. Make sure each slide is on its own line.</li>
+			<li>Enter the title slide. This will be the template.</li>
+			<li>Upload the images, if there are any.</li>
+			<li>Click submit.</li>
+			<li>You will find the generated slides at http://localhost/projects/automating-svg/pngs/ </li>
+		</ol>
+	</div>
+	
+	<div id="formContainer" class="container">
+		
+		<form id="frmSlides" name="frmSlides" action="http://localhost/projects/slide-generator/generation.php" method="POST" enctype="multipart/form-data" >
+			
+			<div class="form-group">
+				
+				<label for="txtContents">
+					The Slide Content: 
+				</label>
+				<textarea id="txtContents" name="txtContents" class="form-control" rows="10" cols="200">Something default here.</textarea>	
+
+			</div>
+			
+			<div class="form-group">
+
+				<label for="txtTitleSlide">
+					Title slide name:
+				</label>
+				<input type="text" id="txtTitleSlide" name="txtTitleSlide" class="form-control" />
+				
+			</div>
+			
+			<div class="form-group">
+
+				<label for="upldFiles">
+					Slides:
+				</label>
+				
+				<input type="file" id="upldFiles" name="upldFiles[]" accept="image/png, image/jpg" multiple class="form-control" />
+				
+			</div>
+			
+			<div class="form-group">
+
+				<input type="submit" value="Submit" id="btnSubmit" name="btnSubmit"  class="form-control"/>
+				<input type="reset" value="Reset" id="btnReset" name="btnSubmit"  class="form-control" />
+				
+			</div>
+			
+		</form>
+		
+	</div>
+
+	<footer class="my-5 pt-5 text-muted text-center text-small">
+		<p>&copy; 2020 Sam W</p>
+	</footer>
+	  
+
+	<!--	Bootstrap JS	-->
+	<script src="http://localhost/jquery/jquery.js"></script>
+	<script src="http://localhost/bootstrap/js/bootstra-min.js"></script>
+	
+  </body>
+</html>
