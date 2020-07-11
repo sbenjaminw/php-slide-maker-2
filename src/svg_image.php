@@ -26,8 +26,6 @@
 		//	This function returns an image string.
 		public function GenerateImageString(){
 			
-			//var_dump($this->imageSource);
-			
 			$imageStr = "\t";
 
 			$imageStr .= '<image ';
